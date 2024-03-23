@@ -1,0 +1,47 @@
+<!-- Calendar for bookings -->
+<!-- pictures -->
+<!-- Send link to aviator to book through -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the Schmitt's</title>
+    <link rel="stylesheet" href="PhotoGallery_R2.css"> <!-- Link to CSS file -->
+   
+</head>
+
+<body>
+
+<div id="photo-gallery">
+    <button id="prev-photo">←</button> <!-- Back arrow -->
+    <img id="displayed-photo" src="photo1.jpg" alt="Photo 1">
+    <button id="next-photo">→</button> <!-- Forward arrow -->
+    <div id="photo-thumbnails">
+        <img class="thumbnail" src="photo1.jpg" alt="Photo 1" onclick="changePhoto(0)">
+        <img class="thumbnail" src="photo2.jpg" alt="Photo 2" onclick="changePhoto(1)">
+        <img class="thumbnail" src="photo3.jpg" alt="Photo 3" onclick="changePhoto(2)"> <!-- *Reminder* Change File path to .jpeg if saving as .jpeg -->
+        <img class="thumbnail" src="photo4.jpg" alt="Photo 4" onclick="changePhoto(3)"> <!-- *Reminder* Change File path to .jpeg if saving as .jpeg -->
+        <img class="thumbnail" src="photo5.jpg" alt="Photo 5" onclick="changePhoto(4)"> <!-- *Reminder* Change File path to .jpeg if saving as .jpeg -->
+        <img class="thumbnail" src="photo6.jpg" alt="Photo 6" onclick="changePhoto(5)"> <!-- *Reminder* Change File path to .jpeg if saving as .jpeg -->
+        <img class="thumbnail" src="photo7.jpg" alt="Photo 7" onclick="changePhoto(6)"> <!-- *Reminder* Change File path to .jpeg if saving as .jpeg -->
+        <img class="thumbnail" src="photo8.jpg" alt="Photo 8" onclick="changePhoto(7)"> <!-- *Reminder* Change File path to .jpeg if saving as .jpeg. 'photo8.jpg' -->
+        <img class="thumbnail" src="photo9.jpg" alt="Photo 9" onclick="changePhoto(8)"> <!-- *Reminder* Change File path to .jpeg if saving as .jpeg -->
+        <img class="thumbnail" src="photo10.jpg" alt="Photo 10" onclick="changePhoto(9)"> <!-- *Reminder* Change File path to .jpeg if saving as .jpeg -->
+        <img class="thumbnail" src="photo11.jpg" alt="Photo 11" onclick="changePhoto(10)"> <!-- *Reminder* Change File path to .jpeg if saving as .jpeg -->
+    </div>
+
+<!-- Website content description -->
+<section id="site-description">
+    <h2>Welcome to Our Website</h2>
+    <p>We love to host guests attending Aviator Paramotor classes at the Lake Wales Airport.  The mother in law suite was added in 2020 when we added a detached garage to our historic home.  The suite is situated in the back of the garage with a side entrance in the screened in pool area.  The kitchenette has all the necessities: small fridge, dinnerware, silverware, 2 burners, microwave with convection oven, coffee pot, electric kettle, sink and a washer/dryer combo.</p>
+    <p>Please email <a href="mailto:lakewalessuite@gmail.com?subject=Inquiry">lakewalessuite@gmail.com</a> to request your booking.</p>
+    <!-- Add more paragraphs or elements as needed -->
+</section>
+
+<div id="calendar"></div>
+
+<script src="ChangePhoto_R2.js"></script> <!-- Link to JavaScript file -->
+
+<iframe src="https://calendar.google.com/calendar/embed?src=lakewalessuite%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="600" height="600" frameborder="0" scrolling="no"></iframe>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+#photo-gallery {
+    background-color: #f0f0f0; /* Choose your desired background color */
+    text-align: center;
+    max-width: 600px; /* Adjust this value to control the overall gallery size */
+    margin: auto; /* Center the gallery on the page */
+    border-radius: 10px; /* Optional: Rounded corners for the gallery container */
+}
+
+#displayed-photo {
+    max-width: 100%; /* Ensure the photo fits within the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.thumbnail {
+    width: 80px; /* Fixed width for thumbnails */
+    height: 60px; /* Fixed height for thumbnails */
+    object-fit: cover; /* Ensures images cover the area, maintaining aspect ratio */
+    margin: 5px;
+    cursor: pointer;
+    opacity: 0.6;
+    flex-grow: 0; /* Prevents thumbnails from growing */
+    flex-shrink: 0; /* Prevents thumbnails from shrinking */
+}
+
+#photo-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px; /* Match or adjust according to the photo gallery size */
+    margin: auto;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+#prev-photo, #next-photo {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+}
+
+body {
+    background-image: url('boktower.jpg');
+    background-size: cover; /* Cover the entire page */
+    background-attachment: fixed; /* Keep the background fixed during scrolling */
+    background-position: center top; /* Center the background image */
+}
+
+#site-description {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px auto; /* Center the container */
+    color: #333;
+    max-width: 800px; /* Maximum width */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+#google-calendar {
+    width: 100%; /* Responsive width */
+    max-width: 600px; /* Maximum width */
+    height: 600px; /* Fixed height */
+    border: none; /* Optional: Removes the border */
+}
+
